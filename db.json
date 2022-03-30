@@ -3,7 +3,7 @@
     {
       "text": "Learn Angular Js Framework",
       "day": "April 15th at 4:00 pm",
-      "reminder": false,
+      "reminder": true,
       "id": 4
     },
     {

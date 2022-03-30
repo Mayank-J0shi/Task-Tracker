@@ -1,7 +1,7 @@
 <!-- [] are for input and () for outputs but if we want to use 2 way data binding we need to use both [()]-->
 <!-- with ngSubmit we do not want to do form . prevent default so that cool  -->
 <!-- key point in this whenever we direct to fuction we do not just point to it we call/execute it then and there -->
-<form class="add-form" (ngSubmit)="onSubmit()">
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
   <div class="form-control">
     <label for="text">Task</label>
     <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Add Task" />

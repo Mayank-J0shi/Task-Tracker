@@ -38,4 +38,10 @@ export class TaskService {
     const url = `${this.apiUrl}/${task.id}`;
     return this.http.put<Task>(url, task, httpOptions); //put is a method that sends the data to the server and returns the response
   }
+
+  addTask(task: Task): Observable<Task> {
+    return this.http.post<Task>(this.apiUrl, task, httpOptions); //post is a method that sends the data to the server and
+                                                                // returns the response and the response is the task that we just added 
+                                                                // to the database
+  }
 }

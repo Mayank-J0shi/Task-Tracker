@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ title }}</h1>
+  <!-- now we can give any fuction , color or text to that reusable function we just need to describe that function in the componets -->
+  <app-button
+    color="green"
+    text="Add"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+</header>

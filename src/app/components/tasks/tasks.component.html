@@ -1,0 +1,2 @@
+<!-- In angular when we want to pass data through props we use @Input() and  @Output() is also returive by the parent component bp props -->
+<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)"></app-task-item>

@@ -1,0 +1,6 @@
+<!-- so with the help of ngStyle we can inline style the according to the minor tweeks we require--->
+<!-- now i want to have this button do some fucntions but also make those fuctional abilities dynamics so for that we use
+     Output and eventEmitter in the componets -->
+<button [ngStyle]="{ 'background-color': color }" class="btn" (click)="onClick()">
+  {{ text }}
+</button>

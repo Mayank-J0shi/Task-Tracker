@@ -29,4 +29,9 @@ export class TasksComponent implements OnInit {
         () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
       ); //subscribe to the observable and remove the task from the tasks array
   }
+
+  toggleReminder(task: Task) {
+    task.reminder = !task.reminder; //toggle the reminder
+    this.taskService.updateTaskReminder(task).subscribe(); //subscribe to the observable and update the task reminder
+  }
 }

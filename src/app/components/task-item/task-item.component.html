@@ -1,4 +1,7 @@
-<div class="task">
+<!-- why are certain element in [] and other in () in angular  --> 
+
+
+<div [ngClass]="{ reminder : task.reminder }" class="task" (dblclick)="onToggle(task)" >
   <!-- h3 and p are both block elements so they could be seen in 2 different lines -->
   <h3>
     {{ task.text }}
